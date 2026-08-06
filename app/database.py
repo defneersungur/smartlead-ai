@@ -35,4 +35,9 @@ def tum_leadler():
     conn = get_db()
     leadler = conn.execute('SELECT * FROM leads ORDER BY tarih DESC').fetchall()
     conn.close()
-    return [dict(lead) for lead in leadler]
+    sonuc = []
+    for lead in leadler:
+        lead_dict = dict(lead)
+        lead_dict['_id'] = str(lead_dict['id'])
+        sonuc.append(lead_dict)
+    return sonuc
