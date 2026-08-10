@@ -34,7 +34,7 @@ Her katman tek bir sorumluluğa sahip: `database.py` dışında hiçbir yerde SQ
 
 - **Python 3.14** + **Flask** — backend sunucusu
 - **SQLite** — veri saklama (leads tablosu)
-- **Groq API** (`llama-3.3-70b-versatile`) — yapay zeka sohbet motoru
+- **Groq API** (`llama-3.1-8b-instant`) — yapay zeka sohbet motoru
 - **Wix Studio + Velo** — frontend (Karşılama Sayfası + Yönetim Paneli)
 - **Render** — backend'in canlı olarak barındığı yer
 
