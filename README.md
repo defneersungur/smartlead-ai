@@ -12,7 +12,7 @@ Sistem iki arayüzden oluşuyor:
 Backend, Flask ile yazılmış; sohbet Groq API üzerinden çalışıyor; veriler SQLite'ta tutuluyor; frontend Wix Studio (Velo) ile Render'daki bu backend'e bağlanıyor.
 
 ## Mimari
-
+```
 smartlead/
 ├── run.py # Sunucuyu başlatan giriş noktası
 ├── config.py # Tüm ayarlar ve anahtarlar (.env okur)
@@ -27,7 +27,7 @@ smartlead/
 │ └── dashboard.html
 └── services/
 └── ai_service.py # Yapay zeka çağrıları
-
+```
 Her katman tek bir sorumluluğa sahip: `database.py` dışında hiçbir yerde SQL, `ai_service.py` dışında hiçbir yerde AI API çağrısı yok.
 
 ## Kullanılan Teknolojiler
